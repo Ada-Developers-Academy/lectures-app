@@ -20,8 +20,11 @@ class Lecture
   end
 
   def self.all
-    @files ||= files.map do |file|
-      create(file)
+    @files ||= begin
+      f = files.map do |file|
+        create(file)
+      end
+      f.sort_by(&:date).reverse
     end
   end
 
