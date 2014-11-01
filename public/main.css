@@ -1,6 +1,6 @@
 body {
-  background-color: #fff;
-  color: #111;
+  background-color: #111;
+  color: white;
   margin-top: 85px;
 }
 
@@ -25,18 +25,13 @@ a:hover {
 .lecture h3 {
   margin-top: 0px;
 }
-
-video {
-  background-color: #111;
-  padding: 0;
-}
 .banner {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: black;
-  background-color: rgba(200,200,200,0.5);
+  background-color: white;
+  background-color: rgba(255,255,255,0.5);
   height: 80px;
   border-bottom: 1px solid #333;
   padding: 16px 0;
