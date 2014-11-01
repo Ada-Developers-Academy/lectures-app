@@ -1,0 +1,24 @@
+<article class='lecture col-lg-12'>
+
+  <div class='row'>
+    <video controls class='col-md-8 col-xs-12'>
+      <source src="<%= lecture.url(:ogg) %>" type="video/ogg">
+      <source src="<%= lecture.url %>" type="video/mp4">
+      I'm sorry; your browser doesn't support HTML5 video in WebM with VP8 or MP4 with H.264.
+      <!-- You can embed a Flash player here, to play your mp4 video in older browsers -->
+    </video>
+    <div class='col-md-4 col-xs-12'>
+      <h3>
+        <a href="/<%= lecture.key %>"><%= lecture.name %></a>
+      </h3>
+      <p>
+        <%= lecture.description %>
+      </p>
+      <small class='text-muted'>Published On: <%= lecture.date.strftime("%m/%d/%y") %></small>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="<%= lecture.link %>" target="_blank">Lecture Notes</a></li>
+      </ul>
+    </div>
+  </div>
+</article>

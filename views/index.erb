@@ -1,0 +1,5 @@
+<div class='row'>
+  <% @lectures.each do |lecture| %>
+    <%= erb :_lecture, locals: {lecture: lecture} %>
+  <% end %>
+</div>
