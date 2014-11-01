@@ -1,7 +1,7 @@
 <article class='lecture col-lg-12'>
 
   <div class='row'>
-    <video controls class='col-md-8 col-xs-12'>
+    <video controls poster="http://placehold.it/750x475/222222/bbbbbb&text=<%= lecture.name %>" class='col-md-8 col-xs-12'>
       <source src="<%= lecture.url(:ogg) %>" type="video/ogg">
       <source src="<%= lecture.url %>" type="video/mp4">
       I'm sorry; your browser doesn't support HTML5 video in WebM with VP8 or MP4 with H.264.
