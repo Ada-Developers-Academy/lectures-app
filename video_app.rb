@@ -1,8 +1,10 @@
 require "sinatra"
 require "aws"
-require 'dotenv'
 
-Dotenv.load
+if ENV["RACK_ENV"] != "production"
+  require 'dotenv'
+  Dotenv.load
+end
 
 Dir.glob("lib/*").each { |path| require_relative path }
 
