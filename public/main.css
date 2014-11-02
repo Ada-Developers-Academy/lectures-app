@@ -64,4 +64,14 @@ a:hover {
   .brand-subtitle {
     display: none;
   }
+  .banner {
+    height: 50px;
+    padding-top: 10px;
+  }
+  .brand-logo {
+    height: 30px;
+  }
+  video {
+    margin-bottom: 5px;
+  }
 }
