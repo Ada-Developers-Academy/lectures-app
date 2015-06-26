@@ -8,7 +8,11 @@ class Lecture
     @name        = attrs["name"]
     @description = attrs["description"]
     @link        = attrs["link"]
-    @date        = Date.parse(attrs["date"]) if attrs["date"]
+    @date        = begin
+      Date.parse(attrs["date"]) if attrs["date"]
+    rescue ArgumentError, "invalid date"
+      Date.today
+    end
   end
 
   def url(format=nil)
